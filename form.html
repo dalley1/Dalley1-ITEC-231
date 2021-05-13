@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form</title>
+<link rel="stylesheet" href="login.css">
+<link rel="stylesheet" href="main.css">
+   <script>
+function openFile() {
+  window.open("thankyou.html");
+}
+</script>
+</head>
+<body>
+		<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+	<a href="Cybercrimes.html">Cybercrimes</a>
+	<a href="3CatCybercrimes.html">3 Categories of Cybercrimes</a>
+	<a href="precautions.html">Precautions</a>
+	<a href="whattodo.html">Troubleshooting Malware</a>
+	<a href="questionnaire.html">Questionnaire</a>
+	<a href="form.html">Email Form</a>
+</div>
+
+<div class="login-box">
+  <h2>Contact Us</h2>
+  <form action="/form_results.txt" method="post">
+    <div class="user-box">
+      <input type="name" name="" required="">
+      <label>Name *</label>
+    </div>
+    <div class="user-box">
+      <input type="email" name="" required="">
+      <label>Email *</label>
+    </div>
+	<div class="user-box">
+	<label style=" top:-29px ">Message Us</label>
+	<hr class="major" />
+		<textarea id="subject" name="subject" placeholder="Write something.." ></textarea>
+	</div>
+    <a href="#">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <input type="button" value="Submit" onclick="openFile()">
+    </a>
+  </form>
+  </div>
+  
+  </body>
+  </html>

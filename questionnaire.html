@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>Questionnaire</title>
+<link rel="stylesheet" href="login.css">
+<link rel="stylesheet" href="main.css">
+   <script>
+function openFile() {
+  window.open("thankyou.html");
+}
+
+</script>
+<style>
+body{
+color: #ffffff;
+}
+
+
+</style>
+</head>
+<body>
+		<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+	<a href="Cybercrimes.html">Cybercrimes</a>
+	<a href="3CatCybercrimes.html">3 Categories of Cybercrimes</a>
+	<a href="precautions.html">Precautions</a>
+	<a href="whattodo.html">Troubleshooting Malware</a>
+	<a href="questionnaire.html">Questionnaire</a>
+	<a href="form.html">Email Form</a>
+</div>
+<div class="login-box">
+  <h2>Answer These Questions!</h2>
+  <form>
+    <div class="user-box">
+      <input type="name" name="" required="">
+      <label>Name *</label>
+    </div>
+	<label>Which antivirus software do you use?</label><br>
+  <input type="radio" id="Norton" name="Antivirus" value="Norton">
+	<label for="Norton">Norton</label><br>
+  <input type="radio" id="McAfee" name="Antivirus" value="McAfee">
+	<label for="McAfee">McAfee</label><br>
+  <input type="radio" id="Bitdefender" name="Antivirus" value="Bitdefender">
+	<label for="Bitdefender">Bitdefender</label><br>
+  <input type="radio" id="BullGuard" name="Antivirus" value="BullGuard">
+	<label for="BullGuard">BullGuard</label><br>
+  <input type="radio" id="Panda" name="Antivirus" value="Panda">
+	<label for="Panda">Panda</label><br>
+  <input type="radio" id="Kaspersky" name="Antivirus" value="Kaspersky">
+	<label for="Kaspersky">Kaspersky</label><br>
+  <input type="radio" id="other" name="Antivirus" value="other">
+	<label for="other">Other</label><br>
+	<br>
+	<label>How well protected do you think you are?</label><br>
+  <div class="slidecontainer">
+  <input type="range" min="1" max="10" value="5" class="slider" id="myRange">
+  <p>Value: <span id="demo"></span></p><br>
+</div>
+<script>
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+</script>
+    <a href="#">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <input type="button" value="Submit" onclick="openFile()">
+	  <input type="reset" value="Reset" >
+    </a>
+  </form>
+  </div>
+  
+  </body>
+  </html>
